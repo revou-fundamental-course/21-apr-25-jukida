@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Suhu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Suhu</h1>
+        <div class="calculator">
+            <form id="tempForm">
+                <div class="input-group">
+                    <label for="temperature">Masukkan Suhu:</label>
+                    <input type="number" id="temperature" step="0.01" required>
+                </div>
+                
+                <div class="input-group">
+                    <label>Pilih Jenis Konversi:</label>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="celsiusToFahrenheit" name="conversionType" value="celsiusToFahrenheit" checked>
+                            <label for="celsiusToFahrenheit">Celsius ke Fahrenheit</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="fahrenheitToCelsius" name="conversionType" value="fahrenheitToCelsius">
+                            <label for="fahrenheitToCelsius">Fahrenheit ke Celsius</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="convert-btn">Konversi</button>
+            </form>
+            
+            <div class="result-container" id="resultContainer">
+                <div class="result-box">
+                    <h2>Hasil Konversi</h2>
+                    <div id="resultOutput" class="result-output">-- °F</div>
+                    <div id="explanation" class="explanation">
+                        Masukkan suhu dan pilih jenis konversi untuk melihat hasil
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
