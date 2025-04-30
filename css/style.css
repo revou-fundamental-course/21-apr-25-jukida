@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0066cc;
+}
+
+.calculator {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #0066cc;
+    outline: none;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+}
+
+.radio-item input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.radio-item label {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.convert-btn {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.convert-btn:hover {
+    background-color: #004e9e;
+}
+
+.result-container {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.result-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #0066cc;
+}
+
+.result-box h2 {
+    color: #0066cc;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.result-output {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.explanation {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        margin: 20px auto;
+    }
+    
+    .calculator {
+        padding: 20px;
+    }
+}
